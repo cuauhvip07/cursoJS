@@ -1,3 +1,5 @@
+// Saber si un arreglo existe -> Regresa un bool
+
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
 
 const carrito = [
@@ -8,3 +10,10 @@ const carrito = [
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
 ]
+
+// comprobar si un arreglo existe
+
+const existe = carrito.some(producto => {
+    return producto.nombre === 'Celular'
+})
+console.log(existe)
